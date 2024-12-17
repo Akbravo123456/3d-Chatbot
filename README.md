@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ![Video Thumbnail](https://img.youtube.com/vi/EzzcEL_1o9o/maxresdefault.jpg)
 
 [Video tutorial](https://youtu.be/EzzcEL_1o9o)
@@ -105,3 +106,6 @@ For open source projects, say how it is licensed.
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
 >>>>>>> f7654b0b07edc76ed1dfe8bcf46471fe33ed3f31
+=======
+# 3d-chat-bot
+>>>>>>> faab8d1f01618869bd78b32fa12354e2bf319d25
