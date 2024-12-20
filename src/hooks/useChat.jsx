@@ -7,12 +7,12 @@ export const ChatProvider = ({ children }) => {
   const [messages, setMessages] = useState([]);
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const [requestPayload, setRequestPayload] = useState(""); // Store the request payload
-  const [response, setResponse] = useState(""); // Store the response
+  const [requestPayload, setRequestPayload] = useState(""); 
+  const [response, setResponse] = useState(""); 
 
   const chat = async (inputMessage) => {
     setLoading(true);
-    setResponse(""); // Clear the previous response when starting a new chat
+    setResponse(""); 
 
     try {
       const payload = {
@@ -21,14 +21,12 @@ export const ChatProvider = ({ children }) => {
         stream: false,
       };
 
-      // Save the request payload for display
       setRequestPayload(JSON.stringify(payload, null, 2));
 
-      // Make the API request
       const response = await axios.post("http://localhost:11434/api/generate", payload);
 
       if (response.status === 200) {
-        setResponse(response.data.response); // Set the response from API
+        setResponse(response.data.response); 
       } else {
         setResponse("Failed to fetch response");
       }
@@ -69,4 +67,4 @@ export const useChat = () => {
     throw new Error("useChat must be used within a ChatProvider");
   }
   return context;
-};
+}; 
